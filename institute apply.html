@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- SweetAlert CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <link href="index.css" rel="stylesheet">
+    <style>
+        /* Style the border like a page */
+        .page-border {
+            border: 2px solid #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+    <div class="">
+        <img class="h-[250px] w-full object-cover" src="images/Navbar.jpg" alt="Logo">
+    </div>
+    
+    <div class="">
+        <nav class="container mx-auto flex flex-wrap items-center justify-between py-4">
+            <div class="block lg:hidden">
+                <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded text-black border-gray-400">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <div class="container shadow-lg flex justify-center">
+                <div class="w-full items-center block lg:flex lg:items-center lg:w-auto hidden" id="menu">
+                    <div class="text-sm text-lg font-bold lg:flex-grow">
+                        <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">HOME</a>
+                        <a href="Courses.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">COURSES</a>
+                        <a href="verified institutes.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">VERIFIED INSTITUTES</a>
+                        <a href="success students.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">SUCCESS STUDENTS</a>
+                        <a href="Student Result.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">STUDENT RESULT</a>
+                        <a href="institute apply.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">INSTITUTE APPLY</a>
+                        <a href="institute login.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">INSTITUTE LOGIN</a>
+                        <a href="notice.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">NOTICE</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </nav>
+    </div>
+    
+    <script>
+        document.getElementById('menu-toggle').onclick = function() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+
+
+<!--Apply-->
+<div class="bg-gray-100 shadow-lg container w-2/3 mx-auto p-10">
+    <div class="">
+        <h2 class="text-3xl font-semibold text-blue-500 mb-6 text-center">INSTITUTE APPLY FORM</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <div class="mb-4 container mx-auto">
+                <label for="institute_name" class="block font-medium mb-1">Institute Name</label>
+                <input type="text" id="institute_name" name="institute_name" class="form-input border border-black text-black w-full">
+            </div>
+            <div class="mb-4">
+                <label for="director_name" class="block font-medium mb-1">Director Name</label>
+                <input type="text" id="director_name" name="director_name" class="form-input border border-black text-black w-full">
+            </div>
+
+            <div class="flex mb-4">
+                <div class="mr-2 w-1/2">
+                    <label for="father_name" class="block font-medium mb-1">Father's Name</label>
+                    <input type="text" id="father_name" name="father_name" class="form-input border border-black text-black w-full">
+                </div>
+                <div class="w-1/2">
+                    <label for="mother_name" class="block font-medium mb-1">Mother's Name</label>
+                    <input type="text" id="mother_name" name="mother_name" class="form-input border border-black text-black w-full">
+                </div>
+            </div>
+
+            <div class="flex mb-4">
+                <div class="mr-2 w-1/2">
+                    <label for="email" class="block font-medium mb-1">Email</label>
+                    <input type="email" id="email" name="email" class="form-input border border-black text-black w-full">
+                </div>
+                <div class="w-1/2">
+                    <label for="mobile_number" class="block font-medium mb-1">Mobile Number</label>
+                    <input type="tel" id="mobile_number" name="mobile_number" class="form-input  border border-black text-black w-full">
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="post_office" class="block font-medium mb-1">Post Office</label>
+                <input type="text" id="post_office" name="post_office" class="form-input border border-black text-black w-full">
+            </div>
+
+            <div class="flex mb-4">
+                <div class="mr-2 w-1/3">
+                    <label for="director_photo" class="block font-medium mb-1">Director Photo</label>
+                    <input type="file" id="director_photo" name="director_photo" class="form-input border border-black text-black w-full">
+                </div>
+                <div class="mr-2 w-1/3">
+                    <label for="institute_photo" class="block font-medium mb-1">Institute Photo</label>
+                    <input type="file" id="institute_photo" name="institute_photo" class="form-input border border-black text-black w-full">
+                </div>
+                <div class="w-1/3">
+                    <label for="national_id" class="block font-medium mb-1">National ID</label>
+                    <input type="file" id="national_id" name="national_id" class="form-input border border-black text-black w-full">
+                </div>
+            </div>
+
+            <div class="flex mb-4">
+                <div class="mr-2 w-1/2">
+                    <label for="district" class="block font-medium mb-1">District</label>
+                    <select id="district" name="district" class="form-select border border-black text-black w-full">
+                        <option value="">Select District</option>
+                        <!-- Add your district options here -->
+                    </select>
+                </div>
+                <div class="w-1/2">
+                    <label for="upazila" class="block font-medium mb-1">Upazila</label>
+                    <select id="upazila" name="upazila" class="form-select border border-black text-black w-full">
+                        <option value="">Select Upazila</option>
+                        <!-- Add your upazila options here -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="address" class="block font-medium mb-1">Address</label>
+                <textarea id="address" name="address" rows="3" class="form-textarea border border-black text-black w-full"></textarea>
+            </div>
+
+            <div class="flex mb-4">
+                <div class="mr-2 w-1/2">
+                    <label for="password" class="block font-medium mb-1">Password</label>
+                    <input type="password" id="password" name="password" class="form-input border border-black text-black w-full">
+                </div>
+                <div class="w-1/2">
+                    <label for="confirm_password" class="block font-medium mb-1">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" class="form-input border border-black text-black w-full">
+                </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-center">
+                <button id="applyButton" type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Apply Now</button>
+            </div>
+            
+            <script>
+                document.getElementById('applyButton').addEventListener('click', function() {
+                    // Trigger SweetAlert dialog
+                    Swal.fire({
+                        title: 'Apply Now',
+                        text: 'Your application has been submitted!',
+                        icon: 'success',
+                        showConfirmButton: false // Don't show the "OK" button
+                    });
+                });
+            </script>
+            
+            
+            
+            
+            </form>
+
+    </div>
+</div>
+
+<!--End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-gray-800  flex p-10 mt-10 left-5 items-center justify-center">
+    <div class="flex">
+        <div class="container mx-auto flex flex-col  text-white">
+            <p>Gazipur Hi-Tech park, Gazipur</p>
+            <p>
+                <i class="text-white fas fa-map-marker-alt mr-2"></i> 
+                Gazipur, Bangladesh
+            </p>
+            <p>
+                <i class="text-white fas fa-phone-alt mr-2"></i>
+                +8801915161764
+            </p>
+            <p>
+                <i class="text-white far fa-envelope mr-2"></i>
+                byttc@gmail.com
+            </p>
+        </div>
+        <div class="flex mt-4">
+            <img class="object-cover w-100 h-80 md:w-auto md:h-auto mr-4 mb-4 md:mb-0" src="images/Footer.jpg" alt="Logo">
+            <img class="object-cover w-100 h-80 md:w-auto md:h-auto" src="images/Footer.jpg" alt="Logo">
+        </div>
+        
+    </div>
+</footer>
+
+
+</html>

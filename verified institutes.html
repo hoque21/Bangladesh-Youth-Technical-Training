@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <style>
+        /* Style the border like a page */
+        .page-border {
+            border: 2px solid #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+    <div class="">
+        <img class="h-[250px] w-full object-cover" src="images/Navbar.jpg" alt="Logo">
+    </div>
+    
+    <div class="">
+        <nav class="container mx-auto flex flex-wrap items-center justify-between py-4">
+            <div class="block lg:hidden">
+                <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <div class="container shadow-lg flex justify-center">
+                <div class="w-full items-center block lg:flex lg:items-center lg:w-auto hidden" id="menu">
+                    <div class="text-sm text-lg font-bold lg:flex-grow">
+                        <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">HOME</a>
+                        <a href="Courses.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">COURSES</a>
+                        <a href="verified institutes.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">VERIFIED INSTITUTES</a>
+                        <a href="success students.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">SUCCESS STUDENTS</a>
+                        <a href="Student Result.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">STUDENT RESULT</a>
+                        <a href="institute apply.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">INSTITUTE APPLY</a>
+                        <a href="institute login.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">INSTITUTE LOGIN</a>
+                        <a href="notice.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">NOTICE</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </nav>
+    </div>
+    
+    <script>
+        document.getElementById('menu-toggle').onclick = function() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+<!--Start Filter-->
+<div>
+    <div class="mb-8">
+        <h2 class="font-bold text-3xl text-center">Filter Verified Branch</h2>
+    </div>
+    <div class="flex items-center justify-center">
+        <div class="mr-4">
+            <label for="district" class="block font-medium mb-1">District</label>
+            <select id="district" name="district" class="form-select border border-black text-black w-full md:w-72 h-10">
+                <option value="">Select District</option>
+            </select>
+        </div>
+        <div class="mr-4">
+            <label for="upazila" class="block font-medium mb-1">Upazila</label>
+            <select id="upazila" name="upazila" class="form-select border border-black text-black w-full md:w-72 h-10">
+                <option value="">Select Upazila</option>
+            </select>
+        </div>
+        <div>
+            <button class="bg-gray-300 w-full border border-black hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">
+                Reset
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+<!--End-->
+<!--Cart Start-->
+<div class="container bg-gray-300 mt-10 p-5 items-center mx-auto py-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Cart items go here -->
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 1</p>
+            <p>$10</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 2</p>
+            <p>$15</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 3</p>
+            <p>$20</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 4</p>
+            <p>$25</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 1</p>
+            <p>$10</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 2</p>
+            <p>$15</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 3</p>
+            <p>$20</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 4</p>
+            <p>$25</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 1</p>
+            <p>$10</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 2</p>
+            <p>$15</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 3</p>
+            <p>$20</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p>Product 4</p>
+            <p>$25</p>
+        </div>
+        
+    </div>
+</div>
+<!--End Cart-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-gray-800  flex p-10 mt-10 left-5 items-center justify-center">
+    <div class="flex">
+        <div class="container mx-auto flex flex-col  text-white">
+            <p>Gazipur Hi-Tech park, Gazipur</p>
+            <p>
+                <i class="text-white fas fa-map-marker-alt mr-2"></i> 
+                Gazipur, Bangladesh
+            </p>
+            <p>
+                <i class="text-white fas fa-phone-alt mr-2"></i>
+                +8801915161764
+            </p>
+            <p>
+                <i class="text-white far fa-envelope mr-2"></i>
+                byttc@gmail.com
+            </p>
+        </div>
+        <div class="flex mt-4">
+            <img class="object-cover w-100 h-80 md:w-auto md:h-auto mr-4 mb-4 md:mb-0" src="images/Footer.jpg" alt="Logo">
+            <img class="object-cover w-100 h-80 md:w-auto md:h-auto" src="images/Footer.jpg" alt="Logo">
+        </div>
+        
+    </div>
+</footer>
+
+</html>

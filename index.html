@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+    <div class="">
+        <img class="h-[250px] w-full object-cover" src="images/Navbar.jpg" alt="Logo">
+    </div>
+    
+    <div class="">
+        <nav class="container mx-auto flex flex-wrap items-center justify-between py-4">
+            <div class="block lg:hidden">
+                <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <div class="container shadow-lg flex justify-center">
+                <div class="w-full items-center block lg:flex lg:items-center lg:w-auto hidden" id="menu">
+                    <div class="text-sm text-lg font-bold lg:flex-grow">
+                        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">HOME</a>
+                        <a href="Courses.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">COURSES</a>
+                        <a href="verified institutes.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">VERIFIED INSTITUTES</a>
+                        <a href="success students.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">SUCCESS STUDENTS</a>
+                        <a href="Student Result.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">STUDENT RESULT</a>
+                        <a href="institute apply.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">INSTITUTE APPLY</a>
+                        <a href="institute login.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">INSTITUTE LOGIN</a>
+                        <a href="notice.html" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-5">NOTICE</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </nav>
+    </div>
+    
+    <script>
+        document.getElementById('menu-toggle').onclick = function() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+
+
+    <div class="w-full  h-auto">
+        <img class=" w-full h-[100px] object-cover" src="" alt="Logo">
+    </div>
+    <div class="border  border-gray-300 p-4 rounded-md">
+        <div class="container mx-auto mt-1 p-1 bg-gray-200">
+            <div class="text-2xl font-semibold bg-white p-2 rounded-md">
+                <div class="flex items-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        News
+                      </button>
+                      
+                    <marquee class="text-black-500" behavior="scroll" direction="left" scrollamount="8">
+                        The independence day
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <div class="container mx-auto mt-10">
+        <div class="flex justify-center items-center">
+            <div class="w-full max-w-screen-lg relative">
+                <img class="w-full h-64 object-cover rounded-lg" src="images/Navbar.jpg" alt="Notice Board Image">
+                <div id="menu" class="absolute inset-0 bg-black opacity-50"></div>
+                <div class="absolute bottom-0 left-0 p-4">
+                    <h2 class="text-xl text-white font-bold">Notice Board</h2>
+                    <div class="mt-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Notice</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Flip box -->
+    <div class="mt-5 flex justify-center mt-20">
+        <div class="shopping-cart mx-auto">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Item 1 Front</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Item 1 Back</h2>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Item 2 Front</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Item 2 Back</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex items-center justify-center mt-10">
+        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">All Courses</button>
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    <!-- Apply Now for Your Institute Registration  -->
+    <div class="rounded border mt-20">
+        <div class="bg-purple-400 h-64 w-full flex flex-col justify-center items-center mt-5">
+            <p class="text-white text-center text-3xl font-bold mb-4">Apply Now for Your Institute Registration</p>
+            <button class="bg-white text-purple-400 font-bold py-2 px-4 rounded hover:bg-purple-400 hover:text-white">Apply Now</button>
+        </div>
+    </div>
+
+
+
+    <!-- Cart  -->
+    <div class="flex justify-center mt-20">
+        <div class="bg-white container w-full rounded-lg shadow-lg p-8 flex justify-between">
+            <div class="flex flex-col justify-center items-center mr-4 mb-4">
+                <div class="rounded-full bg-gray-800  flex items-center justify-center w-12 h-12 mb-2">
+                    <i class="fas fa-institute"></i>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-800 text-lg font-bold">1050</p>
+                    <p class=" text-2xl font-bold text-black ">Institute</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center mr-8 mb-4">
+                <div class="rounded-full bg-gray-800  flex items-center justify-center w-12 h-12 mb-2">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-800 text-lg font-bold">300</p>
+                    <p class=" text-2xl font-bold text-black ">Courses</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center mr-8 mb-4">
+                <div class="rounded-full bg-gray-800 text-white flex items-center justify-center w-12 h-12 mb-2">
+                    <i class="fas fa-exam"></i>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-800 text-lg font-bold">120</p>
+                    <p class=" text-2xl font-bold text-black ">Exam</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div class="rounded-full bg-gray-800 text-white flex items-center justify-center w-12 h-12 mb-2">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-800 text-lg font-bold">144,223</p>
+                    <p class=" text-2xl font-bold text-black ">Students</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="bg-gray-800  flex p-10 mt-10 left-5 items-center justify-center">
+        <div class="flex">
+            <div class="container mx-auto flex flex-col  text-white">
+                <p>Gazipur Hi-Tech park, Gazipur</p>
+                <p>
+                    <i class="text-white fas fa-map-marker-alt mr-2"></i> 
+                    Gazipur, Bangladesh
+                </p>
+                <p>
+                    <i class="text-white fas fa-phone-alt mr-2"></i>
+                    +8801915161764
+                </p>
+                <p>
+                    <i class="text-white far fa-envelope mr-2"></i>
+                    byttc@gmail.com
+                </p>
+            </div>
+            <div class="flex  mt-4">
+                <img class="object-cover w-100 h-80 mr-4" src="images/Footer.jpg" alt="Logo">
+                <img class="object-cover w-100 h-auto" src="images/Footer.jpg" alt="Logo">
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+</body>
+</html>
